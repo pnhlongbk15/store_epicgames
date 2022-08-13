@@ -1,0 +1,29 @@
+.middle {
+    >.wrap {
+        padding-bottom: 90px;
+        .header {
+            margin: 0 150px;
+            padding-bottom: 50px;
+            text-transform: capitalize;
+            font-size: 1rem;
+            .title {
+                h4{
+                    font-size: 1em;
+                    padding: 5px 0;
+                }
+                h1{
+                    font-size: 4em;
+                    padding: 5px 0;
+                }
+                h6 {
+                    font-size: 0.8em;
+                    white-space: wrap;
+                    width: 50%;
+                }
+            }
+           
+        }
+    }
+}
+
+

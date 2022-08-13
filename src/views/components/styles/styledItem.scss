@@ -1,0 +1,82 @@
+.item { //item
+    display: flex;
+    flex-direction: column;
+    
+    .img {
+        position: relative;
+        &:hover .curtain {
+            visibility: visible;
+            cursor: pointer;
+            background-color: rgba($color: #ffffff, $alpha: 0.25);
+        }
+        .curtain {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background-color: rgba($color: #ffffff, $alpha: 0);
+            visibility: hidden;
+            transition: background-color 1s;
+
+            i {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                cursor: pointer;
+                background-color: black;
+                padding: 3px;
+                color: white;
+                border: 2px solid white;
+                border-radius: 50%;
+            }
+            i:hover + h4 {
+                visibility: visible;
+            }
+            h4 {
+                visibility: hidden;
+                display: inline-block;
+                background-color: #2A2A2A;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 0.8em;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateY(-105%);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+    .info {
+        margin-top: 20px;
+        h4 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            text-transform: capitalize;
+            padding-bottom: 5px;
+            font-size: 0.8em;
+        }
+        .price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        // object
+        .discount {
+            background-color: var(--clr-download-primary);
+            padding: 6px 10px;
+            border-radius: 3px;
+        }
+        .before {
+            text-decoration:line-through;
+        }
+    }
+}

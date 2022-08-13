@@ -1,0 +1,89 @@
+.searchBar {
+    display: flex;
+    align-items: center;
+    padding: 30px 150px;
+    color: var(--clr-font);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #121212;
+    z-index: 100;
+    // &.active {
+    //     position: fixed;
+    //     width: 100%;
+    //     z-index: 100;
+    //     background-color: black;
+    //     top: 0;
+    //     left: 0;
+    // }
+    .search {
+        display: flex;
+        height: 40px;
+        width: 160px;
+        background-color: rgba(84, 81, 81, 0.416);
+        align-items: center;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 0 10px;
+        margin-right: 10px;
+
+        &:focus {
+            background-color: rgba(84, 81, 81, 0.747);
+        }
+        i.fa-solid:hover {
+            cursor: pointer;
+            color: white;
+        }
+        i.fa-solid {
+            padding: 0 10px;
+            color: rgba(0, 0, 0, 0.416);
+        }
+        .input {
+            outline: none;
+            border: none;
+            height: 100%;
+            background-color: transparent;
+            color: inherit;
+        }
+        .input::placeholder {
+            font-weight: 450;
+            background-color: transparent;
+        }
+
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        font-size: 0.8em;
+        text-transform: capitalize;
+        color: #a9a5a5b1;
+        font-weight: bold;
+        cursor: pointer;
+
+        li {
+            padding: 5px 20px;
+            position: relative;
+            &.active {
+                color: white;
+            }
+            &.active::after {
+                position: absolute;
+                top: -5%;
+                left: 5%;
+                border-radius: 5px;
+                content: "";
+                width: 90%;
+                height: 120%;
+                border: 1px solid white;
+            }
+        }
+        li:hover {
+            color: white;
+        }
+        
+    }
+}

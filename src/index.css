@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('http://fonts.cdnfonts.com/css/brutal');
+
+:root {
+  --clr-bg-nav: #2A2A2A;
+  --clr-font: #ccc;
+  --clr-download-primary: #007DFC;
+  --clr-download-secondary: #0061F4;
+  --ff-brutal:'Brutal', sans-serif;
+  --ff-openSan: 'Open Sans', sans-serif, arial;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li {
+  list-style: none;
 }
+a {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+p {
+  color: inherit;
+  font-family: var(--ff-openSan);
+}
+h6 {
+  color: #a9a5a5b1;
+  font-family: var(--ff-openSan);
+  font-weight: lighter;
+}
+h4 {
+  color: white;
+  font-family: var(--ff-openSan);
+  font-weight: lighter;
+}
+h1,h2,h3 {
+  color: white;
+  font-family: var(--ff-brutal);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: var(--ff-openSan);
+  background-color: #121212;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 16px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: white;
+}
+

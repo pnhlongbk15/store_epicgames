@@ -1,0 +1,96 @@
+.footer {
+    background-color: #202020;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.655);
+    .top {
+        margin: 0 50px;
+        border-bottom: 0.01px solid rgba(255, 255, 255, 0.655);
+        /*------ Global ------*/
+        h4:hover {
+            cursor: pointer;
+            color: var(--clr-download-secondary);
+        }
+        /*-----------------------*/
+        .icon {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0;
+            font-size: 2em;
+            .fa-brands {
+                margin-right: 20px;
+                cursor: pointer;
+            }
+            .fa-brands:hover {
+                color: var(--clr-download-primary);
+            }
+
+            .fa-angle-up {
+                border: 2px solid rgba(255, 255, 255, 0.655);
+                border-radius: 2px;
+                padding: 3px 6px;
+                font-size: 0.8em;
+            }
+            .fa-angle-up:hover {
+                color: var(--clr-download-primary);
+                border-color: var(--clr-download-primary);
+            }
+        }
+        .source {
+            text-transform: capitalize;
+            font-size: 0.9em;
+            width: 45%;
+            padding-bottom: 30px;
+            h6 {
+                font-size: 1em;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .wrap {
+                color: inherit;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-row-gap: 5px;
+            }
+        }
+        .product {
+            text-transform: capitalize;
+            font-size: 0.9em;
+            padding-bottom: 30px;
+            width: 30%;
+            h6 {
+                font-size: 1em;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .wrap {
+                color: inherit;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-row-gap: 5px;
+            }
+
+        }
+
+    }
+
+    .bottom {
+        padding: 30px 50px;
+        p {
+            font-size: 0.7em;
+            line-height: 2em;
+            width: 50%;
+            padding-bottom: 30px;
+        }
+        .wrap {
+            div{
+                font-size: 1.2em;
+                width: 45%;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                p{
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}

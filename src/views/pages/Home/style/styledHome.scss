@@ -1,0 +1,36 @@
+.middle {
+    .wrap {
+        .bg {
+            margin: 0 150px;
+            margin-bottom: 50px;
+            padding: 30px 40px ;
+            border-radius: 10px;
+            background-color: var(--clr-bg-nav);
+            > div  {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+                letter-spacing: 0.5px;
+                > h4 {
+                    font-size: 1.2rem;
+                }
+                > button{
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    background-color: transparent;
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 0.8rem;
+                    border: 1px solid white;
+                    cursor: pointer;
+                    letter-spacing: 1px;
+                }
+            }
+            .board-display {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

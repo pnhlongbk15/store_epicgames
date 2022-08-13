@@ -1,0 +1,92 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: var(--clr-bg-nav);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+
+    .start {
+        display: flex;
+
+        img {
+            padding: 8px 20px;
+            height: 50px;
+        }
+        li {
+            color: var(--clr-font);
+            height: 50px;
+            line-height: 50px;
+            padding: 0 15px;
+            font-size: 0.75em;
+            text-transform: uppercase;
+            cursor: pointer;
+            position: relative;
+        }
+        li::after {
+            content: "";
+            width: 100%;
+            background-color: var(--clr-download-primary);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all 5s;
+
+        }
+        li:hover {
+            color: white;
+        }
+        li.active::after{
+            height: 5px !important ;
+        }
+        li:hover::after {
+            animation: stretch 0.5s;
+            height: 5px;
+        }
+        @keyframes stretch {
+            from {
+                height: 0;
+            }
+            to {
+                height: 5px;
+            }
+        }
+    }
+
+    .end {
+        display: flex;
+
+        li {
+            color: var(--clr-font);
+            height: 50px;
+            line-height: 50px;
+            padding: 0 30px;
+            font-size: 0.55em;
+            text-transform: uppercase;
+
+            &.lang {
+                font-size: 1rem;
+            }
+            &.signin > a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+    
+                .fa-user {
+                    font-size: 1rem;
+                }
+            }
+            &.btn-down {
+                background-color: var(--clr-download-primary);
+                text-transform: uppercase;
+                color: white ;
+                cursor: pointer;
+            }
+            &.btn-down:hover {
+                background-color: var(--clr-download-secondary);
+            }
+            
+        } 
+    }
+}
